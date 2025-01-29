@@ -1,0 +1,275 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  letter-spacing: 0.02em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+/* Container Mobile 375px */
+@media screen and (min-width: 375px) {
+  .container {
+    width: 375px;
+  }
+}
+
+/* Container Tablet 768px */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+/* Container Desktop 1280px */
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+/* Container Desktop 1440px */
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+
+.footer{
+  background-color: #0E1823;
+
+  .footer-container{
+    background-color: #1b414b;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    border-radius: 24px 24px 0 0;
+
+    @media screen and (min-width: 375px){
+      min-width: 320px;
+      max-width: 375px;
+    }
+
+    @media screen and (min-width: 768px){
+      max-width: 768px;
+      padding-top: 50px;
+      padding-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1280px){
+      max-width: 1280px;
+    }
+
+    @media screen and (min-width: 1440px){
+      max-width: 1440px;
+    }
+
+    .footer-content{
+      padding-left: 30px;
+      padding-right: 30px;
+
+      @media screen and (min-width: 768px){
+        padding-left: 48px;
+        padding-right: 48px;
+      }
+
+      @media screen and (min-width: 1280px){
+        padding-left: 75px;
+        padding-right: 75px;
+      }
+
+      .wrapper{
+
+        @media screen and (min-width: 768px){
+          display: flex;
+          //justify-content: center;
+          gap: 91px;
+          margin-bottom: 96px;
+
+          @media screen and (min-width: 1280px){
+            gap: 311px;
+          }
+
+          @media screen and (min-width: 1440px){
+            gap: 388px;
+          }
+        }
+
+        .nav-logo-content{
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          margin-bottom: 80px;
+          width: 100%;
+
+
+          @media screen and (min-width: 768px){
+            margin-bottom: 0;
+          }
+
+
+          .logo{
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: -0.03em;
+            color: #fbfbfb;
+
+            @media screen and (min-width: 768px){
+              font-size: 20px;
+            }
+          }
+          .nav-list{
+            display: flex;
+            gap: 4px;
+
+            .list-item{
+              .link{
+                display: block;
+                font-weight: 400;
+                font-size: 9px;
+                line-height: 130%;
+                text-transform: uppercase;
+                text-align: center;
+                color: #fbfbfb;
+                padding: 15px 12px;
+                background-color: rgba(251, 251, 251, 0.3);
+                border: none;
+                border-radius: 8px;
+
+                @media screen and (min-width: 768px){
+                  padding: 15px 24px;
+                }
+
+                &:hover,
+                &:focus{
+                  color: #1B414B;
+                  background-color: #FBFBFB;
+                }
+              }
+            }
+          }
+        }
+
+        .social-list{
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+          margin-bottom: 40px;
+
+          .item{
+            .link{
+
+              .icon{
+                fill: #fbfbfb;
+
+                &:hover,
+                &:focus {
+                  fill: rgba(251, 251, 251, 0.8);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .slogan-container{
+        display: flex;
+        justify-content: center;
+
+        .slogan-text{
+          max-width: 279px;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 100%;
+          letter-spacing: -0.02em;
+          text-align: center;
+          color: #fbfbfb;
+          margin-bottom: 82px;
+
+          @media screen and (min-width: 768px){
+            max-width: 640px;
+            font-size: 32px;
+            margin-bottom: 99px;
+
+            .third-break{
+              display: none;
+            }
+          }
+          @media screen and (max-width: 1279px){
+            .first-break{
+              display: none;
+            }
+            .second-break{
+              display: none;
+            }
+          }
+
+          @media screen and (min-width: 1280px){
+            max-width: 693px;
+          }
+        }
+      }
+
+      .copyright{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        .copyright-text{
+          font-size: 12px;
+          line-height: 117%;
+          letter-spacing: 0.03em;
+          text-align: center;
+          color: rgba(251, 251, 251, 0.4);
+
+          @media screen and (min-width: 768px){
+            font-size: 14px;
+            line-height: 118%;
+          }
+        }
+      }
+    }
+  }
+}
